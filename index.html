@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showAlert() {
+            alert("Your form has been submitted!");
+            return false; // Prevents form from actually submitting
+        }
+    </script>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>SURVEY</h1>
+        <h2>HCI: LAB-TASK</h2>
+
+        <form onsubmit="return showAlert();">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department">
+                </div>
+                <div class="form-group">
+                    <label for="semester">Semester:</label>
+                    <input type="text" id="semester" name="semester">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="prefer-not-to-answer"> Prefer Not to Answer</label>
+            </div>
+
+            <h3>STUDENT PORTAL QUESTIONNAIRE</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Questions</th>
+                        <th>Never</th>
+                        <th>Rarely</th>
+                        <th>Sometimes</th>
+                        <th>Often</th>
+                        <th>Always</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>How easy is it to navigate through the COMSATS Virtual Campus website?</td>
+                        <td><input type="radio" name="q1" value="never"></td>
+                        <td><input type="radio" name="q1" value="rarely"></td>
+                        <td><input type="radio" name="q1" value="sometimes"></td>
+                        <td><input type="radio" name="q1" value="often"></td>
+                        <td><input type="radio" name="q1" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>Is the information provided on the website comprehensive and easy to understand?</td>
+                        <td><input type="radio" name="q2" value="never"></td>
+                        <td><input type="radio" name="q2" value="rarely"></td>
+                        <td><input type="radio" name="q2" value="sometimes"></td>
+                        <td><input type="radio" name="q2" value="often"></td>
+                        <td><input type="radio" name="q2" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How would you rate the overall design and layout of the website?</td>
+                        <td><input type="radio" name="q3" value="never"></td>
+                        <td><input type="radio" name="q3" value="rarely"></td>
+                        <td><input type="radio" name="q3" value="sometimes"></td>
+                        <td><input type="radio" name="q3" value="often"></td>
+                        <td><input type="radio" name="q3" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How satisfied are you with the loading speed of the website?</td>
+                        <td><input type="radio" name="q4" value="never"></td>
+                        <td><input type="radio" name="q4" value="rarely"></td>
+                        <td><input type="radio" name="q4" value="sometimes"></td>
+                        <td><input type="radio" name="q4" value="often"></td>
+                        <td><input type="radio" name="q4" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>Does the website cater to your accessibility needs (e.g screen readers, text size adjustments)?</td>
+                        <td><input type="radio" name="q5" value="never"></td>
+                        <td><input type="radio" name="q5" value="rarely"></td>
+                        <td><input type="radio" name="q5" value="sometimes"></td>
+                        <td><input type="radio" name="q5" value="often"></td>
+                        <td><input type="radio" name="q5" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How well does the website function on mobile devices</td>
+                        <td><input type="radio" name="q6" value="never"></td>
+                        <td><input type="radio" name="q6" value="rarely"></td>
+                        <td><input type="radio" name="q6" value="sometimes"></td>
+                        <td><input type="radio" name="q6" value="often"></td>
+                        <td><input type="radio" name="q6" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>Are the support resources (e.g FAQs, contact information) easily accessible and helpful?</td>
+                        <td><input type="radio" name="q7" value="never"></td>
+                        <td><input type="radio" name="q7" value="rarely"></td>
+                        <td><input type="radio" name="q7" value="sometimes"></td>
+                        <td><input type="radio" name="q7" value="often"></td>
+                        <td><input type="radio" name="q7" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How useful are the academic resources (e.g, course catalogs) provided on the website?</td>
+                        <td><input type="radio" name="q8" value="never"></td>
+                        <td><input type="radio" name="q8" value="rarely"></td>
+                        <td><input type="radio" name="q8" value="sometimes"></td>
+                        <td><input type="radio" name="q8" value="often"></td>
+                        <td><input type="radio" name="q8" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How would you rate your experience with the student login process?</td>
+                        <td><input type="radio" name="q9" value="never"></td>
+                        <td><input type="radio" name="q9" value="rarely"></td>
+                        <td><input type="radio" name="q9" value="sometimes"></td>
+                        <td><input type="radio" name="q9" value="often"></td>
+                        <td><input type="radio" name="q9" value="always"></td>
+                    </tr>
+                    <tr>
+                        <td>How satisfied are you with your overall experience using the COMSATS Virtual Campus website?</td>
+                        <td><input type="radio" name="q10" value="never"></td>
+                        <td><input type="radio" name="q10" value="rarely"></td>
+                        <td><input type="radio" name="q10" value="sometimes"></td>
+                        <td><input type="radio" name="q10" value="often"></td>
+                        <td><input type="radio" name="q10" value="always"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
